@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sempana Web</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Poppins, sans-serif;
+      background-color: #f2f6f7;
+      color: #26a09b;
+      
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background: #ffffffcc; 
+      backdrop-filter: blur(6px);
+      padding: 12px 30px;
+      color: #26a09b;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-box img {
+      height: 50px;
+      width: auto;
+    }
+
+    .logo-box span {
+      font-size: 18px;
+      font-weight: 600;
+      color: #26a09b;
+    }
+
+    nav {
+      color: #26a09b;
+      margin-left: 25px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #26a09b;
+      margin-left: 25px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: #0a4f4c;
+    }
+
+    .hero {
+      background:
+        linear-gradient(rgba(0, 80, 80, 0.65), rgba(0, 80, 80, 0.65)),
+        url('Sempana/BackgroundSempana.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      padding: 120px 20px 100px;
+      text-align: center;
+      animation: slidein 1s forwards;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      font-size: 17px;
+      opacity: 0.9;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #26a09b;
+      min-width: 150px;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .dropdown-content a:hover {
+      background: #26a09b;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .blog {
+  padding: 50px 80px;
+  text-align: center;
+  animation: slidein 2s forwards;
+}
+
+.blog h2 {
+  font-size: 18px;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+  .cards {
+  display: flex;
+  flex-wrap: wrap;       /* allow wrapping if screen is small */
+  justify-content: center; /* center the cards */
+  gap: 90px;
+  padding: 20px;
+  animation: slidein 2s forwards;
+}
+
+.card {
+  width: 300px;          /* fixed width for all cards */
+  height: 250px;         /* fixed height for consistency */
+  border-radius: 40px;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 80, 80, 0.65), rgba(0, 80, 80, 0.65));
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 90%;           /* fixed ratio for image area */
+  object-fit: cover;     /* prevents stretching */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(rgba(0, 80, 80, 0.8), rgba(0, 80, 80, 0.8));
+}
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      background: #fff;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    @keyframes slidein {
+      from {
+        opacity: 0;
+        transform: translateX(0);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(-30px);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo-box">
+    <img src="Sempana/logosempana.png" alt="Logo Sekolah">
+    <span>SMP Negeri 9 Kota Tangerang</span>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+    <a href="#">About</a>
+    <div class="dropdown-content">
+          <a href="history.html">History</a>
+          <a href="visimisi.html">Vision and Mission</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+    <a href="#">Activity</a>
+    <div class="dropdown-content">
+      <a href="eskul.html">Extracurricular</a>
+      <a href="prestasi.html">Prestation</a>
+    </div>
+    </div>
+    <a href="guru.html">Teachers</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Daftar Ekstrakulikuler</h1>
+  <p>SMP Negeri 9 Tangerang</p>
+</section>
+
+<section class="blog">
+  <h2>Berikut daftar Ekstrakulikuler</h2>
+  <div class="cards">
+    <a class="card">
+        <p>Pencak Silat</p>
+      <img src="Sempana/Reference/silat.jpg">
+     </a>
+
+     <a class="card">
+        <p>PMR</p>
+      <img src="Sempana/Reference/pmr.jpg">
+     </a>
+
+     <a class="card">
+        <p>Paskibra</p>
+      <img src="Sempana/Reference/paskibra.jpeg">
+     </a>
+
+     <a class="card">
+        <p>Pramuka</p>
+      <img src="Sempana/Reference/pramuka.jpeg">
+        </a>
+
+        <a class="card">
+            <p>Renang</p>
+      <img src="Sempana/Reference/renang.jpg">
+        </a>
+
+        <a class="card">
+            <p>Basket</p>
+      <img src="Sempana/Reference/basket.jpg">
+        </a>
+
+        <a class="card">
+            <p>Volly</p>
+      <img src="Sempana/Reference/volley.jpeg">
+        </a>
+
+        <a class="card">
+            <p>Futsal</p>
+      <img src="Sempana/Reference/futsal.png">
+        </a>
+
+        <a class="card">
+            <p>Karate</p>
+      <img src="Sempana/Reference/karate.JPG">
+        </a>
+
+        <a class="card">
+            <p>English Club</p>
+      <img src="Sempana/Reference/english.jpg">
+        </a>
+
+        <a class="card">
+            <p>Badminton</p>
+      <img src="Sempana/Reference/badminton.jpg">
+        </a>
+
+        <a class="card">
+            <p>Taekwondo</p>
+        <img src="Sempana/Reference/taekwondo.png">
+        </a>
+  </div>
+
+<div class="content">
+  <p>
+    Perumnas I Jl. Belimbing Raya, RT.002/RW.015, Cibodasari, Kec. Cibodas, Kota Tangerang, Banten 15810
+  </p>
+</div>
+
+
+<footer>
+  © 2025 SMP Negeri 9 Kota Tangerang, Arkanul Islam Reandis
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Sempana Web</title>
+  <style>
+   body {
+      margin: 0;
+      font-family: Poppins, sans-serif;
+      background-color: #f2f6f7;
+      color: #26a09b;
+      
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background: #ffffffcc; 
+      backdrop-filter: blur(6px);
+      padding: 12px 30px;
+      color: #26a09b;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-box img {
+      height: 50px;
+      width: auto;
+    }
+
+    .logo-box span {
+      font-size: 18px;
+      font-weight: 600;
+      color: #26a09b;
+    }
+
+    nav {
+      color: #26a09b;
+      margin-left: 25px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #26a09b;
+      margin-left: 25px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: #0a4f4c;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #26a09b;
+      min-width: 150px;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .dropdown-content a:hover {
+      background: #26a09b;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      background: #fff;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    @keyframes slidein {
+      from {
+        opacity: 0;
+        transform: translateX(0px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(-20px);
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: #26a09b;
+      margin-bottom: 30px;
+      animation: slidein 2s forwards;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      animation: slidein 4s forwards;
+    }
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background-color: #26a09b;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      th {
+        position: sticky;
+        top: 0;
+      }
+      td {
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #eee;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+  <div class="logo-box">
+    <img src="Sempana/logosempana.png" alt="Logo Sekolah">
+    <span>SMP Negeri 9 Kota Tangerang</span>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+    <a href="#">About</a>
+    <div class="dropdown-content">
+          <a href="history.html">History</a>
+          <a href="visimisi.html">Vision and Mission</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+    <a href="#">Activity</a>
+    <div class="dropdown-content">
+      <a href="eskul.html">Extracurricular</a>
+      <a href="prestasi.html">Prestation</a>
+    </div>
+    </div>
+    <a href="guru.html">Teachers</a>
+  </nav>
+</header>
+
+  <h1>Prestasi Peserta Didik</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Jenis Kejuaraan</th>
+        <th>Prestasi</th>
+        <th>Tingkat</th>
+        <th>Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Lomba cerdas cermat kebudayaan</td>
+        <td>Juara 1</td>
+        <td>Kecamatan</td>
+        <td>2023</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>O2SN Pencak Silat</td>
+        <td>Juara 2</td>
+        <td>Kota</td>
+        <td>2023</td>
+      </tr>
+        <tr>
+            <td>3</td>
+            <td>Festival pangan B2SA</td>
+            <td>Juara Harapan 2</td>
+            <td>Kota</td>
+            <td>2023</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Festival dan Lomba Seni Siswa Nasional Ansambel</td>
+            <td>Juara 1</td>
+            <td>Kota</td>
+            <td>2024</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Festival dan Lomba Seni Siswa Nasional Tari Kreasi</td>
+            <td>Juara 3</td>
+            <td>Kota</td>
+            <td>2024</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>O2SN Pencak Silat</td>
+            <td>Juara 1</td>
+            <td>Kota</td>
+            <td>2024</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>PORSENI Vokal Grup</td>
+            <td>Juara 2</td>
+            <td>Kota</td>
+            <td>2024</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Lomba Pertolongan Pertama</td>
+            <td>Juara 2</td>
+            <td>Kota</td>
+            <td>2024</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Lomba Mading Donor Darah Sukarela</td>
+            <td>Juara 2</td>
+            <td>Kota</td>
+            <td>2024</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Lomba Ansambel Campuran</td>
+            <td>Juara 3</td>
+            <td>Provinsi</td>
+            <td>2025</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <div class="content">
+  <p>
+    Perumnas I Jl. Belimbing Raya, RT.002/RW.015, Cibodasari, Kec. Cibodas, Kota Tangerang, Banten 15810
+  </p>
+</div>
+
+
+<footer>
+  © 2025 SMP Negeri 9 Kota Tangerang, Arkanul Islam Reandis
+</footer>
+
+</body>
+</html>

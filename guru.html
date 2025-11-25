@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Sempana Web</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Poppins, sans-serif;
+      background-image: url(Sempana/backgroundguru.jpg);
+      background-size: cover;
+      color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background: #ffffffcc; 
+      backdrop-filter: blur(6px);
+      padding: 12px 30px;
+      color: #26a09b;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-box img {
+      height: 50px;
+      width: auto;
+    }
+
+    .logo-box span {
+      font-size: 18px;
+      font-weight: 600;
+      color: #26a09b;
+    }
+
+    nav {
+      color: #26a09b;
+      margin-left: 25px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #26a09b;
+      margin-left: 25px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: #0a4f4c;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #26a09b;
+      min-width: 150px;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .dropdown-content a:hover {
+      background: #26a09b;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      background: #fff;
+      margin-top: 250px;
+      font-size: 14px;
+      color: #555;
+      border-top: 100px solid #e5e5e5;
+    }
+
+    @keyframes slidein {
+      from {
+        opacity: 0;
+        transform: translateX(0px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(-20px);
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      animation: slidein 1s forwards;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 50px;
+      max-width: 1200px;
+      margin: auto;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+      animation: slidein 1s forwards;
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #26a09b;
+      animation: slidein 2s forwards;
+    }
+    .card p {
+      font-size: 14px;
+      color: #7f8c8d;
+      animation: slidein 3s forwards;
+    }
+  </style>
+</head>
+
+<header>
+  <div class="logo-box">
+    <img src="Sempana/logosempana.png" alt="Logo Sekolah">
+    <span>SMP Negeri 9 Kota Tangerang</span>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+    <a href="#">About</a>
+    <div class="dropdown-content">
+          <a href="history.html">History</a>
+          <a href="visimisi.html">Vision and Mission</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+    <a href="#">Activity</a>
+    <div class="dropdown-content">
+      <a href="eskul.html">Extracurricular</a>
+      <a href="prestasi.html">Prestation</a>
+    </div>
+    </div>
+    <a href="guru.html">Teachers</a>
+  </nav>
+</header>
+
+<body>
+
+  <h1>Daftar Guru SMP Negeri 9 Kota Tangerang</h1>
+
+  <div class="grid">
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="Caswani, S.Pd.">
+      <h3>Caswani, S.Pd.</h3>
+      <p>Kepala Sekolah</p>
+    </div>
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="Dra. Rania Lela Sianturi">
+      <h3>Dra. Rania Lela Sianturi</h3>
+      <p>IPA</p>
+    </div>
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="Albertha Sri Purwanti, M.Pd.">
+      <h3>Albertha Sri Purwanti, M.Pd.</h3>
+      <p>Bahasa Indonesia</p>
+    </div>
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="N.Tiwi Kartiwi, S.Pd.">
+      <h3>N.Tiwi Kartiwi, S.Pd.</h3>
+      <p>IPS</p>
+    </div>
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="Imas Komala, S.Pd.">
+      <h3>Imas Komala, S.Pd.</h3>
+      <p>PPKN</p>
+    </div>
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="Drs. Joko Garjito, M.Pd.">
+      <h3>Drs. Joko Garjito, M.Pd.</h3>
+      <p>PJOK</p>
+    </div>
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="Sumarno, S.Pd.">
+      <h3>Sumarno, S.Pd.</h3>
+      <p>Matematika</p>
+    </div>
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="Suhaimi, S.Ag.">
+      <h3>Suhaimi, S.Ag.</h3>
+      <p>PAIBP</p>
+    </div>
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="Lenny Malani, S.Pd.">
+      <h3>Lenny Malani, S.Pd.</h3>
+      <p>Bahasa Inggris</p>
+    </div>
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="Dra. Istikomah">
+      <h3>Dra. Istikomah</h3>
+      <p>Bahasa Indonesia</p>
+    </div>
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="Maulia Rahmawati, S.Pd.">
+      <h3>Maulina Rahmawati, S.Pd.</h3>
+      <p>BK</p>
+    </div>
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="Tjahjo Pamungkas, S.Sos.">
+      <h3>Tjahjo Pamungkas, S.Sos.</h3>
+      <p>Prakarya</p>
+    </div>
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="M.Arromi Salam. S.Pd.">
+      <h3>M.Arromi Salam. S.Pd.</h3>
+      <p>Seni Budaya</p>
+    </div>
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="Dra. Siti Nurjanah">
+      <h3>Dra. Siti Nurjanah</h3>
+      <p>Bahasa Inggris</p>
+    </div>
+    <div class="card">
+      <img src="Sempana/profil.jpg" alt="Dra. Hj. Eny Suhartini">
+      <h3>Dra. Hj. Eny Suhartini</h3>
+      <p>IPA</p>
+    </div>
+  </div>
+
+<footer>
+  © 2025 SMP Negeri 9 Kota Tangerang, Arkanul Islam Reandis
+</footer>
+
+</body>
+</html>
